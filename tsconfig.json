@@ -5,6 +5,11 @@
     "module": "ESNext",
     "declaration": true,
     "declarationDir": "dist",
-    "strict": true
-  }
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src"]
 }
