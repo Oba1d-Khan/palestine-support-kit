@@ -1,6 +1,6 @@
 {
   "name": "palestine-support-kit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "description": "",
   "main": "dist/index.js",
