@@ -26,10 +26,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    filter: blur(20px);
+    filter: blur(30px);
     width: 100%;
     height: 100%;
-    opacity: 0.2;
+    opacity: 0.3;
     z-index: -1;
     background: linear-gradient(175deg, #ff0000, #ffb6b6, #00ff00, #000000);
 }
@@ -45,9 +45,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #1f2937;
-    margin: 0;
     font-weight: 500;
     letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -56,6 +57,7 @@ body {
     letter-spacing: 1px;
     font-weight: 700;
     color: #000000;
+    margin: 0 5px;
 }
 
 .icon {
@@ -66,27 +68,37 @@ body {
     fill: currentColor;
 }
 
-.button {
-    border-radius: 9999px;
-    background-color: rgb(177, 56, 56);
-    padding: 8px 15px;
-    font-size: 14px;
+.flag {
+    width: 30px;
+    height: 18px;
     margin: 0 5px;
+}
+
+.donate {
+    padding: 8px;
+    font-size: 14px;
     font-weight: 600;
-    color: #ffffff;
+    color: #d74242;
     text-decoration: none;
     transition: background-color 0.3s;
     white-space: nowrap;
+    text-decoration: underline;
 
 }
 
-.button:hover {
-    background-color: #d74242;
+.donate:hover {
+    scale: 1.05;
+    text-shadow: 0 0 4px #f1d3d3;
+    transition: text-shadow 0.3s;
+    transition: scale 0.3s;
+
 
 }
 
-.button span {
-    margin-left: 5px;
+.donate span {
+    font-size: 14px;
+    text-shadow: 0 0 14px #f1d3d3;
+
 }
 
 
@@ -108,7 +120,7 @@ body {
 .close-button .close-icon {
     width: 20px;
     height: 20px;
-    fill: #1f2937;
+    fill: #0a0b0c;
 }
 
 .close-button .close-icon path {
@@ -123,11 +135,11 @@ body {
     .container {
         position: relative;
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 6px;
+        align-items: center;
+        justify-items: space-between;
+        gap: 0px;
         overflow: hidden;
-        padding: 8px;
+        padding: 4px;
         border-radius: 10px;
         box-shadow: none;
         text-align: start;
@@ -137,7 +149,7 @@ body {
         display: flex;
         align-items: center;
         gap: 0px;
-        padding: 0px 8px;
+        padding: 0px 0px;
         flex-direction: row;
     }
 
@@ -148,22 +160,48 @@ body {
     }
 
     .content strong {
-        font-size: 14px;
-        max-width: 70vw;
+        font-size: 12px;
+        max-width: 40vw;
         text-align: start;
         display: block;
+    }
+
+    p .text {
+        display: none
+    }
+
+    p span {
+        display: none;
     }
 
     .icon {
         display: none
     }
 
-    .button {
-        padding: 6px 12px;
+    .donate {
+        padding: 0px;
         font-size: 12px;
+        font-weight: 600;
+        color: #d74242;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        white-space: nowrap;
+        text-decoration: underline;
+
     }
 
-    .button span {
-        margin-left: 2px;
+    .donate:hover {
+        scale: 1.05;
+        text-shadow: 0 0 4px #f1d3d3;
+        transition: text-shadow 0.3s;
+        transition: scale 0.3s;
+
+
+    }
+
+    .donate span {
+        font-size: 14px;
+        text-shadow: 0 0 14px #f1d3d3;
+
     }
 }
