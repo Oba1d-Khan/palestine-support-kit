@@ -1,2 +1,2 @@
-export * from "./components/Button"
 export * from "./components/Banner"
+export * from "./components/Banner2"
