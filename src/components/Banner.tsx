@@ -1,5 +1,6 @@
-import React from "react";
-import "../index.css";
+// src/components/Banner.jsx
+import React from 'react';
+import '../index.css';
 
 interface BannerProps {
     variant?: "light" | "dark";
@@ -9,20 +10,20 @@ const Banner: React.FC<BannerProps> = ({ variant = "light" }) => {
     const isDarkVariant = variant === "dark";
 
     return (
-        <div className={`relative flex items-center justify-center px-4 py-2 overflow-hidden text-center md:px-0 gap-14 max-h-12 md:max-h-10 ${isDarkVariant ? 'text-white bg-black' : ''}`}>
-            <div className="absolute z-0 w-screen h-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 blur-xl md:blur-2xl opacity-35 bg-custom-gradient"></div>
-            <div className="z-10 flex items-center md:gap-12">
-                <p className="flex items-center text-base font-medium leading-6 tracking-wide text-gray-700">
+        <div className={`tw-relative tw-flex tw-items-center tw-justify-center tw-px-4 tw-py-2 tw-overflow-hidden tw-text-center md:tw-px-0 tw-gap-14 tw-max-h-12 md:tw-max-h-10 ${isDarkVariant ? 'tw-text-white tw-bg-black' : ''}`}>
+            <div className="tw-absolute tw-z-0 tw-w-screen tw-h-full tw-transform -tw-translate-x-1/2 -tw-translate-y-1/2 tw-top-1/2 tw-left-1/2 tw-blur-xl md:tw-blur-2xl tw-opacity-35 tw-bg-custom-gradient"></div>
+            <div className="tw-z-10 tw-flex tw-items-center md:tw-gap-12">
+                <p className="tw-flex tw-items-center tw-text-base tw-font-medium tw-leading-6 tw-tracking-wide tw-text-gray-700">
                     <img
                         src="./Flag_of_Palestine.png"
                         alt=""
-                        className="w-8 h-5 mr-2 md:mr-5"
+                        className="tw-w-8 tw-h-5 tw-mr-2 md:tw-mr-5"
                     />
-                    <strong className={`mr-2 text-xs font-semibold tracking-wider md:mr-2 text-start md:text-sm max-w-[40vw] ${isDarkVariant ? 'text-white' : 'text-black'}`}>
+                    <strong className={`tw-mr-2 tw-text-xs tw-font-semibold tw-tracking-wider md:tw-mr-2 tw-text-start md:tw-text-sm tw-max-w-[40vw] ${isDarkVariant ? 'tw-text-white' : 'tw-text-black'}`}>
                         Palestinian Lives Matter
                     </strong>
-                    <span className={`hidden mr-2 md:block ${isDarkVariant ? 'text-white' : 'text-gray-700'}`}>-</span>
-                    <p className={`hidden text-sm font-medium leading-6 tracking-wide md:block ${isDarkVariant ? 'text-white' : 'text-gray-700'}`}>
+                    <span className={`tw-hidden tw-mr-2 md:tw-block ${isDarkVariant ? 'tw-text-white' : 'tw-text-gray-700'}`}>-</span>
+                    <p className={`tw-hidden tw-text-sm tw-font-medium tw-leading-6 tw-tracking-wide md:tw-block ${isDarkVariant ? 'tw-text-white' : 'tw-text-gray-700'}`}>
                         Showing solidarity and love with Palestinian lives!
                     </p>
                 </p>
@@ -30,7 +31,7 @@ const Banner: React.FC<BannerProps> = ({ variant = "light" }) => {
                     href="https://www.pcrf.net/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`px-2 py-1 text-xs transition duration-300 transform rounded-full md:text-sm md:px-3 inlinefont-bold animate-pulse hover:scale-105 ${isDarkVariant ? 'bg-white text-black hover:bg-gray-200' : 'text-white bg-red-600 hover:bg-red-700'}`}
+                    className={`tw-px-2 tw-py-1 tw-text-xs tw-transition tw-duration-300 tw-transform tw-rounded-full md:tw-text-sm md:tw-px-3 tw-inlinefont-bold tw-animate-pulse hover:tw-scale-105 ${isDarkVariant ? 'tw-bg-white tw-text-black hover:tw-bg-gray-200' : 'tw-text-white tw-bg-red-600 hover:tw-bg-red-700'}`}
                 >
                     Donate Now
                 </a>
