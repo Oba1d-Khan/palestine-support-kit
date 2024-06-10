@@ -13,7 +13,10 @@ export default defineConfig({
     plugins: [
         typescript({ tsconfig: "./tsconfig.json" }),
         postcss({
-            modules: true,
+            plugins: [
+                require('tailwindcss'),
+                require('autoprefixer'),
+            ],
             extensions: ['.css']
         })
     ]
