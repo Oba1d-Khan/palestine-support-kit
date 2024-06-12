@@ -7,7 +7,14 @@ const Banner = () => {
             <div className={styles.bg}></div>
             <div className={styles.content}>
                 <p>
-                    <img src="./Flag_of_Palestine.png" alt="" className={styles.flag} />
+                    <a href="https://emoji.gg/emoji/1893-palestine-flag">
+                        <img
+                            src="https://cdn3.emoji.gg/emojis/1893-palestine-flag.png"
+                            width="64px"
+                            height="64px"
+                            alt="Palestine_Flag"
+                        />
+                    </a>{" "}
                     <strong>
                         Palestinian Lives Matter <span>-</span>
                     </strong>
