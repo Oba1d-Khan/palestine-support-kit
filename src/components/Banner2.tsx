@@ -2,7 +2,7 @@ import React from "react";
 const Banner2 = () => {
     return (
         <div className="tw-relative tw-flex tw-items-center tw-justify-center tw-px-4 tw-py-1 tw-overflow-hidden tw-text-center md:tw-py-[0.18rem] md:tw-px-0 tw-gap-14 tw-max-h-9 md:tw-max-h-10 ">
-            <div className=" tw-absolute tw-inset-0 tw-z-0 tw-w-full tw-h-full tw-bg-center  md:tw-bg-cover tw-bg-keffiyeh-pattern tw-blur-[1px]  tw-opacity-30"></div>
+            <div className=" tw-absolute tw-inset-0 tw-z-0 tw-w-full tw-h-full tw-bg-center  md:tw-bg-cover tw-bg-[url('/src/assets/illustration.png')] tw-blur-[1px]  tw-opacity-30"></div>
 
             <div className=" tw-z-10 tw-flex tw-items-center md:tw-px-2 tw-bg-white tw-rounded-full md:tw-gap-12 tw-backdrop-blur-lg">
                 <p className=" tw-flex tw-items-center tw-text-base tw-font-medium tw-leading-6 tw-tracking-wide tw-text-gray-700">
