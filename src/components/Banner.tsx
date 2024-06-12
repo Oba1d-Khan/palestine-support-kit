@@ -7,11 +7,11 @@ const Banner = () => {
             <div className={styles.bg}></div>
             <div className={styles.content}>
                 <p>
-                    <a href="https://emoji.gg/emoji/1893-palestine-flag">
+                    <a href="https://emoji.gg/emoji/1893-palestine-flag" className={styles.flag}>
                         <img
                             src="https://cdn3.emoji.gg/emojis/1893-palestine-flag.png"
-                            width="64px"
-                            height="64px"
+                            width="32px"
+                            height="32px"
                             alt="Palestine_Flag"
                         />
                     </a>{" "}
@@ -31,7 +31,7 @@ const Banner = () => {
                     Donate Now <span>&rarr;</span>
                 </a>
             </div>
-        </div>
+        </div >
     );
 };
 

@@ -4,18 +4,21 @@ import '../index.css';
 
 const Banner2 = () => {
     return (
-        <div className="tw-relative tw-flex tw-items-center tw-justify-center tw-px-4 tw-py-1 tw-overflow-hidden tw-text-center md:tw-py-1 md:tw-px-0 tw-gap-14 tw-max-h-12 md:tw-max-h-10">
-            <div
+        <div className="bg-white tw-relative tw-flex tw-items-center tw-justify-center tw-px-4 tw-py-1 tw-overflow-hidden tw-text-center md:tw-py-1 md:tw-px-0 tw-gap-14 tw-max-h-12 md:tw-tw-bg-white">
+            {/* <div
                 className="tw-absolute tw-inset-0 tw-z-0 tw-w-full tw-h-full tw-bg-center md:tw-scale-105 md:tw-bg-cover tw-opacity-35 tw-blur-sm tw-contrast-500"
                 style={{ backgroundImage: "url('./keffiyeh.jpg')" }}
-            ></div>
+            ></div> */}
             <div className="tw-z-10 tw-flex tw-items-center tw-px-2 tw-bg-gray-100 tw-rounded-full md:tw-gap-12 tw-backdrop-blur-lg">
                 <p className="tw-flex tw-items-center tw-text-base tw-font-medium tw-leading-6 tw-tracking-wide tw-text-gray-700">
-                    <img
-                        src="./Flag_of_Palestine.png"
-                        alt=""
-                        className="tw-w-8 tw-h-5 tw-mr-2 md:tw-mr-5"
-                    />
+                    <a href="https://emoji.gg/emoji/1893-palestine-flag" >
+                        <img
+                            src="https://cdn3.emoji.gg/emojis/1893-palestine-flag.png"
+                            width="32px"
+                            height="32px"
+                            alt="Palestine_Flag"
+                        />
+                    </a>
                     <strong className="tw-mr-2 tw-text-xs tw-font-bold tw-tracking-wider tw-text-black md:tw-mr-4 tw-text-start md:tw-text-sm tw-max-w-[40vw]">
                         We stand with Palestine!
                     </strong>
