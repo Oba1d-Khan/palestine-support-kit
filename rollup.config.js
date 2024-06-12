@@ -16,17 +16,19 @@ export default defineConfig({
     plugins: [
         typescript({ tsconfig: './tsconfig.json' }),
         postcss({
+            extract: true,
             plugins: [
-                tailwindcss,
+                tailwindcss({ config: './src/tailwind.config.js' }),
                 autoprefixer,
             ],
-            extensions: ['.css']
+            extensions: ['.css'],
+            minimize: true,
         }),
         url({
-            include: ['**/*.png', '**/*.jpg', '**/*.svg'], // include image extensions
-            limit: 0, // no limit, copy files as-is
-            fileName: '[name][extname]', // maintain the original name
-            destDir: 'dist/assets' // specify the output directory for assets
+            include: ['**/*.png', '**/*.jpg', '**/*.svg'],
+            limit: 0,
+            fileName: '[name][extname]',
+            destDir: 'dist/assets'
         }),
     ]
 });

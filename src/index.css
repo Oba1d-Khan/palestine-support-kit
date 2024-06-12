@@ -9,3 +9,9 @@
         font-family: "Montserrat", sans-serif;
     }
 }
+
+@layer utilities {
+    .tw-bg-keffiyeh-pattern {
+        @apply bg-keffiyeh-pattern;
+    }
+}
