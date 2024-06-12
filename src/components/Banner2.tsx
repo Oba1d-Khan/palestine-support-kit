@@ -1,7 +1,7 @@
 import React from "react";
 const Banner2 = () => {
     return (
-        <div className="relative flex items-center justify-center px-4 py-1 overflow-hidden text-center md:py-[0.18rem] md:px-0 gap-14 max-h-9 md:max-h-10 ">
+        <div className="relative flex items-center justify-center px-4 py-1 overflow-hidden text-center md:py-[0.18rem] md:px-0 gap-14 max-h-9 md:max-h-10 bg-gray-50">
             <div className="absolute inset-0 z-0 w-full h-full bg-center md:bg-cover bg-[url('/src/assets/illustration.png')] blur-[1px] opacity-30"></div>
 
             <div className="z-10 flex items-center md:px-2 bg-white rounded-full md:gap-12 backdrop-blur-lg">
