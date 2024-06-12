@@ -16,7 +16,7 @@ export default defineConfig({
     plugins: [
         typescript({ tsconfig: './tsconfig.json' }),
         postcss({
-            extract: true,
+            extract: true,  // This extracts the CSS to a separate file
             plugins: [
                 tailwindcss({ config: './src/tailwind.config.js' }),
                 autoprefixer,
