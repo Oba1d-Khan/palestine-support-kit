@@ -7,16 +7,26 @@ import url from '@rollup/plugin-url';
 
 export default defineConfig({
     input: 'src/index.ts',
-    output: {
-        format: 'esm',
-        dir: 'dist',
-        name: 'palestine-support-kit',
-    },
+    output: [
+        {
+            format: 'cjs',
+            dir: 'dist',
+            name: 'palestine-support-kit',
+            entryFileNames: '[name].js',
+            chunkFileNames: '[name]-[hash].js'
+        },
+        {
+            format: 'esm',
+            dir: 'dist',
+            entryFileNames: '[name].esm.js',
+            chunkFileNames: '[name]-[hash].esm.js'
+        }
+    ],
     external: ['react', 'react-dom'],
     plugins: [
         typescript({ tsconfig: './tsconfig.json' }),
         postcss({
-            extract: true,  // This extracts the CSS to a separate file
+            extract: 'index.css',
             plugins: [
                 tailwindcss({ config: './src/tailwind.config.js' }),
                 autoprefixer,
