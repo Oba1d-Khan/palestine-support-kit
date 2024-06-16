@@ -1,8 +1,6 @@
 import { defineConfig } from 'rollup';
 import typescript from '@rollup/plugin-typescript';
 import postcss from 'rollup-plugin-postcss';
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
 import url from '@rollup/plugin-url';
 
 export default defineConfig({
@@ -20,11 +18,6 @@ export default defineConfig({
         typescript({ tsconfig: './tsconfig.json' }),
         postcss({
             extract: 'index.css',
-            plugins: [
-                tailwindcss({ config: './src/tailwind.config.js' }),
-                autoprefixer,
-            ],
-            extensions: ['.css'],
             minimize: true,
         }),
         url({
