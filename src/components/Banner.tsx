@@ -32,7 +32,6 @@ const Banner = () => {
                     </a>
                 </div>
             </div>
-
         </>
         // <div className={styles.container}>
         //     <div className={styles.bg}></div>
