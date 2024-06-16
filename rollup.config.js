@@ -11,7 +11,6 @@ export default defineConfig({
         {
             format: 'cjs',
             dir: 'dist',
-            name: 'palestine-support-kit',
             entryFileNames: '[name].js',
             chunkFileNames: '[name]-[hash].js'
         },
