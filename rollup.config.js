@@ -9,16 +9,10 @@ export default defineConfig({
     input: 'src/index.ts',
     output: [
         {
-            format: 'cjs',
-            dir: 'dist',
-            entryFileNames: '[name].js',
-            chunkFileNames: '[name]-[hash].js'
-        },
-        {
             format: 'esm',
             dir: 'dist',
-            entryFileNames: '[name].esm.js',
-            chunkFileNames: '[name]-[hash].esm.js'
+            entryFileNames: '[name].js',
+            chunkFileNames: '[name]-[hash].js',
         }
     ],
     external: ['react', 'react-dom'],
