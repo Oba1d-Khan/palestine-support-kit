@@ -1,8 +1,16 @@
 import * as React from "react";
+import { useState } from 'react';
 import './Banner.css';
+
 const Banner = () => {
+    const [visible, setVisible] = useState(true);
+
+    const handleClose = () => {
+        setVisible(false);
+    };
     return (
         <>
+            visible && (
             <div className="banner-container">
                 <div className="banner-bg"></div>
                 <div className="banner-content">
@@ -30,8 +38,12 @@ const Banner = () => {
                         </div>
                         Donate Now
                     </a>
+                    <button className="close-button" onClick={handleClose}>
+                        &times;
+                    </button>
                 </div>
             </div>
+            )
         </>
         // <div className={styles.container}>
         //     <div className={styles.bg}></div>
