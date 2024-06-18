@@ -1,10 +1,10 @@
 {
   "name": "palestine-support-kit",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "type": "module",
   "description": "",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "npx rollup -c"
   },
