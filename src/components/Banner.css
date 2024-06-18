@@ -31,6 +31,16 @@ body {
     background: black;
 }
 
+.banner-bg.banner-light {
+    background: whitesmoke;
+}
+
+.banner-bg.banner-gradient {
+    background: linear-gradient(145deg, #ff0000b1, #00ff00af, #ffb6b6);
+    filter: blur(1.5rem);
+    opacity: 40%;
+}
+
 .banner-content {
     z-index: 10;
     display: flex;

@@ -2,16 +2,21 @@ import * as React from "react";
 import { useState } from 'react';
 import './Banner.css';
 
-const Banner = () => {
+interface BannerProps {
+    variant?: 'dark' | 'light' | 'gradient';
+}
+
+const Banner: React.FC<BannerProps> = ({ variant = 'dark' }) => {
     const [visible, setVisible] = useState(true);
 
     const handleClose = () => {
         setVisible(false);
     };
+
     return (
         visible && (
             <div className="banner-container">
-                <div className="banner-bg"></div>
+                <div className={`banner-bg banner-${variant}`}></div>
                 <div className="banner-content">
                     <p className="banner-text">
                         <a href="" className="banner-flag">
@@ -43,7 +48,7 @@ const Banner = () => {
                 </button>
             </div>
         )
-    )
+    );
 };
 
 export { Banner };
