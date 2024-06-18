@@ -2,24 +2,25 @@
 
 # <img src="https://cdn3.emoji.gg/emojis/1893-palestine-flag.png" width="40" height="28" alt="Palestine Flag"> Palestine Support Kit
 
-Palestine Support Kit is a simple and customizable banner component designed to show solidarity with Palestine on your website. The banner provides a message of support and includes a donation link, encouraging visitors to contribute to the cause.
+Palestine Support Kit delievers components designed to show solidarity with Palestine on your website. The banner provides a message of support and includes a donation link, encouraging visitors to contribute to the cause.
 
 ## Table of Contents
 
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 
-## Features
-
-- Display a banner with a message of solidarity with Palestine.
-- Include a donation link with a customizable URL.
-- Responsive design that works across various screen sizes.
-- Close button to allow users to hide the banner.
-
 ## Preview Example
 
-![Preview Image](https://i.imgur.com/NafRu3D.png)
+**_Banner component:_**
+
+![Preview Image](https://i.imgur.com/L9XOCil.png)
+
+
+**_Toast component:_**
+
+![Preview Image](https://i.imgur.com/JUww8ov.png)
+
+
 
 ## Installation
 
@@ -35,8 +36,8 @@ npm install palestine-support-kit@latest
 
 ```jsx
 import React from "react";
-import { Banner } from "palestine-support-kit";
-import "palestine-support-kit/dist/Banner.css";
+import { Banner } from 'palestine-support-kit' 
+import "palestine-support-kit/dist/index.css";
 
 const App = () => {
   return (
@@ -56,13 +57,13 @@ export default App;
 //Layout.jsx
 
 import React from "react";
-import { Banner } from "palestine-support-kit";
-import "palestine-support-kit/dist/Banner.css";
+import { PalestineToast } from "palestine-support-kit";
+import "palestine-support-kit/dist/index.css";
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <Banner />
+      <PalestineToast/>  
       <main>{children}</main>
       {/* Additional layout components */}
     </div>
