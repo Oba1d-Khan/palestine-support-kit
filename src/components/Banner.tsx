@@ -25,7 +25,7 @@ const Banner = () => {
                         <strong className="banner-strong">We stand with Palestine!</strong>
                     </p>
                     <a
-                        href="https://www.pcrf.net/"
+                        href="https://docs.google.com/document/d/e/2PACX-1vQbGQgTK4xRq-OLD8lGyyX_0NcWw2FV8x9qLkPWIyXjR6_DTpeerKIFnj9mZ8DtUU_3DbesWMR_t5jT/pub"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="banner-donate"
