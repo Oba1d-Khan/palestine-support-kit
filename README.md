@@ -30,7 +30,6 @@ npm install palestine-support-kit@latest
 ```
 
 ## Usage
-<<<<<<< HEAD
 
 # Reactjs:
 
@@ -38,13 +37,6 @@ npm install palestine-support-kit@latest
 import React from "react";
 import { Banner } from "palestine-support-kit";
 import "palestine-support-kit/dist/Banner.css";
-=======
-# Reactjs:
-```jsx
-import React from 'react';
-import { Banner } from 'palestine-support-kit';
-import 'palestine-support-kit/dist/Banner.css';
->>>>>>> e361cf10f5b3730886128825e15dfd4af92d11da
 
 const App = () => {
   return (
@@ -56,13 +48,8 @@ const App = () => {
 };
 
 export default App;
-
 ```
-# Nextjs:
-```jsx
-//Layout.jsx
 
-<<<<<<< HEAD
 # Nextjs:
 
 ```jsx
@@ -83,24 +70,6 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
-=======
-import React from 'react';
-import { Banner } from 'palestine-support-kit';
-import 'palestine-support-kit/dist/Banner.css';
-
-const Layout = ({ children }) => {
-  return (
-    <div>
-      <Banner />
-      <main>{children}</main>
-      {/* Additional layout components */}
-    </div>
-  );
-};
-
-export default Layout;
-
->>>>>>> e361cf10f5b3730886128825e15dfd4af92d11da
 ```
 
 ## Credits
